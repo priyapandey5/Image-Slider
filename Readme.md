@@ -1,0 +1,1 @@
+This project is basically a image slider usimg html, css javascript. It displays the seriesof images in a visually appealing way.it display the first image when the page loads and allows user to see next or previous images using navigate butttons.it also slide automatically.it has smooth user interface. 
