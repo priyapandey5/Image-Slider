@@ -1,7 +1,7 @@
 const Slider = () => {
   const slideRef = document.createElement("div");
   const loadingProgress = 0;
- 
+  let intervalId;
 
   const handleClickNext = () => {
     let items = slideRef.querySelectorAll(".item");
@@ -13,8 +13,7 @@ const Slider = () => {
     slideRef.prepend(items[items.length - 1]);
   };
 
-  const startAutoTransition = () => {
-    
+const startAutoTransition = () => {
     intervalId = setInterval(handleClickNext, 5000);
   };
 
@@ -90,7 +89,7 @@ const Slider = () => {
     content.appendChild(button);
     slideItem.appendChild(content);
     slideRef.appendChild(slideItem);
-
+ });
     const buttons = document.createElement("div");
     buttons.classList.add("buttons");
 
@@ -119,9 +118,7 @@ const Slider = () => {
     buttons.appendChild(prevButton)
     buttons.appendChild(nextButton)
     container.appendChild(buttons);
-  });
-
- 
+  
   setTimeout(startAutoTransition, 3000);
 
 // Stop automatic transition when mouse enters the slider container
