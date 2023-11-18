@@ -14,7 +14,7 @@ const Slider = () => {
   };
 
 const startAutoTransition = () => {
-    intervalId = setInterval(handleClickNext, 5000);
+    intervalId = setInterval(handleClickNext, 3000);
   };
 
   const stopAutoTransition = () => {
